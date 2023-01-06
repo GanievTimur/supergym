@@ -658,6 +658,14 @@ button,
   color: #102654;
 }
 
+.page-body {
+  position: relative;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .container {
   width: 85%;
   max-width: 1366px;
@@ -949,6 +957,9 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   border: 4px solid #ffffff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .header-hero__description-button:hover {
@@ -1044,6 +1055,7 @@ button,
   transform: translate(50%, -50%);
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 /* @mixin hover-focus {
@@ -1155,9 +1167,6 @@ button,
   .header-hero__description-button {
     margin: 0;
     padding: 19px 32px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
 
   .header-hero__image {

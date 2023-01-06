@@ -113,11 +113,11 @@
   text-transform: uppercase;
   color: #ffffff;
   border: 4px solid #ffffff;
+  width: max-content;
 
   @media (max-width: 1199px) {
     margin: 0;
     padding: 19px 32px;
-    width: max-content;
   }
 
   @media (max-width: 767px) {

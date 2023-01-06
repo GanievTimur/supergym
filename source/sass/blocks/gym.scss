@@ -162,6 +162,7 @@
   transform: translate(50%, -50%);
   border: none;
   background-color: inherit;
+  cursor: pointer;
 
   @media (max-width: 1199px) {
     & svg {
