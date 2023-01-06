@@ -808,6 +808,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header-top a {
+  z-index: 2;
 }
 
 .header-top__logo {
@@ -837,6 +843,11 @@ button,
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.header-top__phone:hover {
+  opacity: 0.9;
+  text-decoration: underline;
 }
 
 .header-hero {
@@ -930,6 +941,10 @@ button,
   border: 4px solid #ffffff;
 }
 
+.header-hero__description-button:hover {
+  background-color: #483d8b;
+}
+
 .header-hero__image {
   margin-top: -22px;
 }
@@ -979,6 +994,76 @@ button,
   .container {
     width: 88%;
   }
+
+  .header {
+    padding: 34px 0 62px;
+  }
+
+  .header-top {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    margin-bottom: 19px;
+  }
+
+  .header-top__logo {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .header-top__phone {
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  .header-hero {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .header-hero__categories-list {
+    margin: 27px 0 0;
+  }
+
+  .header-hero__description {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    margin-top: 49px;
+  }
+
+  .header-hero__description-subtitle {
+    font-size: 34px;
+    line-height: 41px;
+    margin: 0 8px 10px;
+  }
+
+  .header-hero__description-title {
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: lowercase;
+    margin: -2px 3px 37px 16px;
+  }
+
+  .header-hero__description-button {
+    margin: 0;
+    padding: 19px 32px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .header-hero__image {
+    margin: 0;
+  }
+
+  .header-hero__image img {
+    width: 324px;
+    height: 390px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -997,6 +1082,48 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header {
+    padding: 16px 0 35px;
+  }
+
+  .header-top__logo {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-top__phone {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-hero__categories-list {
+    margin: 127px 0 115px;
+  }
+
+  .header-hero__description-subtitle {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0 4px 16px;
+  }
+
+  .header-hero__description-title {
+    margin: -2px 1px 23px 16px;
+  }
+
+  .header-hero__description-button {
+    padding: 20px 84px;
+  }
+
+  .header-hero__image {
+    display: none;
+  }
+}
+
+@media (max-width: 310px) {
+  .header-hero__description-button {
+    padding: 20px 45px;
   }
 }
 

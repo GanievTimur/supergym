@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1199px) {
+    align-items: end;
+    margin-bottom: 19px;
+  }
+
+  & a {
+    z-index: 2;
+  }
 }
 
 .header-top__logo {
@@ -15,6 +25,16 @@
   align-items: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .header-top__phone {
@@ -27,4 +47,19 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  @media (max-width: 1199px) {
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+  }
 }
