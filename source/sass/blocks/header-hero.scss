@@ -82,6 +82,12 @@
   letter-spacing: 0.05em;
   color: #ffffff;
 
+  &::first-letter {
+    @media (max-width: 1199px) {
+      text-transform: uppercase;
+    }
+  }
+
   @media (max-width: 1199px) {
     font-size: 72px;
     line-height: 86px;
