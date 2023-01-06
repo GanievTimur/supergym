@@ -1,0 +1,30 @@
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__logo {
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.header-top__phone {
+  margin-top: -13px;
+  margin-right: 1px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
