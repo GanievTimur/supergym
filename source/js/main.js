@@ -45,6 +45,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
+///Video popup
+
 const videoInit = (selector) => {
   const videos = document.querySelectorAll(selector)
 
@@ -81,3 +83,20 @@ const iframeGenerate = (videoID) => {
 }
 
 videoInit('.gym__video')
+
+///Tabs
+
+let tabs = document.querySelector('.tabs');
+let tabsHeader = tabs.querySelector('.tabs__button-list');
+let tabsBody = tabs.querySelector('.tabs__content');
+let tabsHeaderNodes = tabs.querySelectorAll('.tabs__button-list > li');
+let tabsBodyNodes = tabs.querySelectorAll('.tabs__content > ul');
+
+for (let i = 0; i < tabsHeaderNodes.length; i++) {
+  tabsHeaderNodes[i].addEventListener('click', () => {
+    tabsHeader.querySelector('.tabs__button-active').classList.remove('tabs__button-active');
+    tabsHeaderNodes[i].classList.add('tabs__button-active');
+    tabsBody.querySelector('.tabs__content-active').classList.remove('tabs__content-active');
+    tabsBodyNodes[i].classList.add('tabs__content-active');
+  });
+}

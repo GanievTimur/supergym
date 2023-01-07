@@ -130,6 +130,8 @@
 
   &:hover {
     background-color: #483d8b;
+    box-shadow: 0 0 0 7px rgb(118, 46, 177), 0 0 0 14px rgba(118, 46, 177, 0.6);
+    transition: 0.3s;
   }
 }
 
