@@ -100,3 +100,37 @@ for (let i = 0; i < tabsHeaderNodes.length; i++) {
     tabsBodyNodes[i].classList.add('tabs__content-active');
   });
 }
+
+///Slider
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 40,
+
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.trainers__button-next',
+    prevEl: '.trainers__button-prev',
+  },
+});
