@@ -1078,7 +1078,6 @@ button,
   background: #f8f9fc;
   padding: 119px 0;
   z-index: 3;
-  overflow: hidden;
 }
 
 .tabs__background-image {
@@ -1573,6 +1572,139 @@ button,
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
   -ms-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.advantage {
+  position: relative;
+  background-color: #f8f9fc;
+  padding: 147px 0;
+}
+
+.advantage .container {
+  width: 76%;
+}
+
+.advantage__title {
+  margin: 0 0 50px 11px;
+  text-align: center;
+}
+
+.advantage__center-description {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 240px;
+  min-height: 307px;
+  background-color: #1c3374;
+  text-align: center;
+}
+
+.advantage__center-description-number {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 90%;
+  margin-top: 23%;
+  margin-bottom: 2%;
+}
+
+.advantage__center-description-view {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  margin-bottom: 14%;
+}
+
+.advantage__center-description-info {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.advantage-discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.advantage-discription:not(:last-of-type) .advantage-discription__info {
+  padding-bottom: 72px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.advantage-discription:last-of-type {
+  padding-top: 77px;
+}
+
+.advantage-discription__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 34%;
+}
+
+.advantage-discription__info .advantage-discription__info-wrapper:first-child {
+  padding-left: 17px;
+}
+
+.advantage-discription__info .advantage-discription__info-options {
+  margin: 0;
+  margin-right: 30px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 85%;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantage-discription__info span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2e35ac;
+}
+
+.advantage-discription__info-wrapper p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 135%;
+  color: #102654;
+  margin-bottom: 6px;
+}
+
+.advantage-discription__info-wrapper span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #102654;
 }
 
 /* @mixin hover-focus {

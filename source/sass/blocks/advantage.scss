@@ -1,0 +1,58 @@
+.advantage {
+  position: relative;
+  background-color: #f8f9fc;
+  padding: 147px 0;
+
+  & .container {
+    width: 76%;
+  }
+}
+
+.advantage__title {
+  margin: 0 0 50px 11px;
+  text-align: center;
+}
+
+.advantage__center-description {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  min-height: 307px;
+  background-color: #1c3374;
+  text-align: center;
+}
+
+.advantage__center-description-number {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 90%;
+  margin-top: 23%;
+  margin-bottom: 2%;
+}
+
+.advantage__center-description-view {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  margin-bottom: 14%;
+}
+
+.advantage__center-description-info {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
