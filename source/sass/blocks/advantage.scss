@@ -1,58 +1,156 @@
 .advantage {
-  position: relative;
-  background-color: #f8f9fc;
-  padding: 147px 0;
+  padding: 146px 0;
+}
 
-  & .container {
-    width: 76%;
-  }
+.advantage__list {
+  padding: 0;
+  margin-left: 60px;
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 31% 22% 31%;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 60px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "area simulators parking"
+    "сomfort simulators practice";
+}
+
+.advantage__item-wrapper {
+  text-align: start;
+  margin-left: 28px;
+  margin-top: -2px;
+}
+
+.advantage__item {
+  display: flex;
 }
 
 .advantage__title {
-  margin: 0 0 50px 11px;
+  margin: 0 0 51px 10px;
   text-align: center;
+
 }
 
-.advantage__center-description {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 240px;
-  min-height: 307px;
-  background-color: #1c3374;
-  text-align: center;
-}
-
-.advantage__center-description-number {
+.advantage__item-number {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  color: #ffffff;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 85%;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantage__item-number-text {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2e35ac;
+  text-align: start;
+}
+
+.advantage__item-subtitle {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+  color: #102654;
+}
+
+.advantage__item-number-info {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #102654;
+}
+
+.area {
+  grid-area: area;
+  padding-left: 21px;
+}
+
+.parking {
+  grid-area: parking;
+}
+
+.comfort {
+  grid-area: сomfort;
+  align-items: flex-end;
+  padding-left: 21px;
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+
+  & .advantage__item-number-wrapper {
+    margin-bottom: -5px;
+  }
+
+  & .advantage__item-wrapper {
+    margin-bottom: -5px;
+  }
+}
+
+.practice {
+  grid-area: practice;
+  align-items: flex-end;
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+
+  & .advantage__item-number-wrapper {
+    margin-bottom: -5px;
+  }
+
+  & .advantage__item-wrapper {
+    margin-bottom: -5px;
+  }
+}
+
+.simulators {
+  background-color: #1c3374;
+  grid-area: simulators;
+  display: row;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 35px 35px 41px 35px;
+}
+
+.advantage__item-title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 74px;
-  line-height: 90%;
-  margin-top: 23%;
-  margin-bottom: 2%;
+  line-height: 110%;
+  color: #ffffff;
+  margin-top: 15px;
 }
 
-.advantage__center-description-view {
+.advantage__item-view {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  color: #ffffff;
   font-weight: 700;
   font-size: 26px;
   line-height: 150%;
-  margin-bottom: 14%;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
-.advantage__center-description-info {
-  margin: 0;
+.advantage__item-description {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  color: #ffffff;
 }
