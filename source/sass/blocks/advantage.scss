@@ -11,6 +11,12 @@
   }
 }
 
+.advantage .container {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
 .advantage__list {
   padding: 0;
   margin-left: 60px;
@@ -56,7 +62,7 @@
   margin-top: -2px;
 
   @media (max-width: 767px) {
-    width: 85%;
+    width: 78%;
     margin: 0 auto;
     text-align: center;
   }

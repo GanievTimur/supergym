@@ -1475,7 +1475,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow-y: scroll;
   background: rgba(16, 38, 84, 0.89);
 }
 
@@ -2404,6 +2403,10 @@ button,
     padding: 44px 0 150px;
   }
 
+  .advantage .container {
+    width: 100%;
+  }
+
   .advantage__list {
     margin-left: 0;
     gap: 0 31px;
@@ -2415,7 +2418,7 @@ button,
   }
 
   .advantage__item-wrapper {
-    width: 85%;
+    width: 78%;
     margin: 0 auto;
     text-align: center;
   }
