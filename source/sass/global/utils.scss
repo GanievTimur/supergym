@@ -93,3 +93,15 @@
 .scroll-hidden {
   overflow: hidden;
 }
+
+.reviews-swiper {
+  max-width: 595px;
+
+  @media (max-width: 1199px) {
+    max-width: 580px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 390px;
+  }
+}

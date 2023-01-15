@@ -101,7 +101,9 @@ for (let i = 0; i < tabsHeaderNodes.length; i++) {
   });
 }
 
-///Slider
+
+
+///Slider-trainers
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -134,3 +136,20 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.trainers__button-prev',
   },
 });
+
+
+///Slider-reviews
+
+let swiperReviews = new Swiper ('.reviews-swiper', {
+
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+});
+
