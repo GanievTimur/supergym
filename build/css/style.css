@@ -1754,6 +1754,174 @@ button,
   color: #ffffff;
 }
 
+.stock {
+  background-color: #ffffff;
+  padding: 78px 0;
+}
+
+.stock__title {
+  margin: 0 0 33px 2px;
+  text-align: center;
+}
+
+.stock__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.stock__main-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.stock__main-offer-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 35px 45px 45px 45px;
+  background-color: #ed0233;
+}
+
+.stock__main-offer-description strong {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 85%;
+  color: #ffffff;
+}
+
+.stock__main-offer-description a {
+  margin-top: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.stock__main-offer-description-period {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  color: #ffffff;
+}
+
+.stock__main-offer-description-info {
+  margin: 22px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.stock__additional-offer-wrapper {
+  padding: 7px;
+  min-height: 212px;
+  background: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%), -o-linear-gradient(bottom, #ffffff, #ffffff);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%), linear-gradient(0deg, #ffffff, #ffffff);
+}
+
+.stock__additional-offer-free,
+.stock__additional-offer-discount {
+  background-color: #ffffff;
+  padding: 21px 28px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.stock__additional-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 48.3%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.stock__additional-offer h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  color: #1c3374;
+  margin-bottom: 5px;
+}
+
+.stock__additional-offer p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c3374;
+}
+
+.stock__additional-offer a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1c3374;
+  margin-bottom: 8px;
+}
+
+.stock__main-offer-image {
+  width: 280px;
+  height: 462px;
+}
+
+.stock__main-offer-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2146,6 +2314,53 @@ button,
   .advantage__item-description {
     margin-top: 13px;
   }
+
+  .stock {
+    padding: 93px 0;
+  }
+
+  .stock__title {
+    margin: 0 0 40px -9px;
+  }
+
+  .stock__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stock__main-offer {
+    margin-right: 0;
+    margin-bottom: 30px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .stock__main-offer-description {
+    width: 41.2%;
+    padding: 35px 45px 45px 44px;
+  }
+
+  .stock__additional-offer-wrapper {
+    width: 48%;
+    height: auto;
+    min-height: 211px;
+  }
+
+  .stock__additional-offer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .stock__main-offer-image {
+    width: 59%;
+    max-width: 410px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -2528,11 +2743,81 @@ button,
   .advantage__item-description {
     margin-top: 10px;
   }
+
+  .stock {
+    padding: 66px 0;
+  }
+
+  .stock__title {
+    margin: 0 0 42px -6px;
+  }
+
+  .stock__main-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stock__main-offer-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stock__main-offer-description a {
+    margin: 0 auto;
+  }
+
+  .stock__main-offer-description-info {
+    margin: 18px 0 32px;
+  }
+
+  .stock__additional-offer-wrapper {
+    width: 100%;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+    margin-bottom: 31px;
+  }
+
+  .stock__additional-offer-free,
+  .stock__additional-offer-discount {
+    padding: 30px 43px 39px 43px;
+    text-align: center;
+  }
+
+  .stock__additional-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stock__additional-offer p {
+    margin-bottom: 27px;
+  }
+
+  .stock__additional-offer a {
+    margin: 0 auto;
+  }
+
+  .stock__main-offer-image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
   .gym__video img {
     max-width: 320px;
+  }
+}
+
+@media (max-width: 325px) {
+  .stock__main-offer-image {
+    width: 100%;
+    height: 299px;
   }
 }
 

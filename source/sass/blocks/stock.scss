@@ -1,0 +1,236 @@
+.stock {
+  background-color: #ffffff;
+  padding: 78px 0;
+
+  @media (max-width: 1199px) {
+    padding: 93px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 66px 0;
+  }
+}
+
+.stock__title {
+  margin: 0 0 33px 2px;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    margin: 0 0 40px -9px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 0 42px -6px;
+  }
+}
+
+.stock__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.stock__main-offer {
+  display: flex;
+  margin-right: 10px;
+
+  @media (max-width: 1199px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.stock__main-offer-description {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 45px 45px 45px;
+  background-color: #ed0233;
+
+  @media (max-width: 1199px) {
+    width: 41.2%;
+    padding: 35px 45px 45px 44px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  & strong {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85%;
+    color: #ffffff;
+  }
+
+  & a {
+    margin-top: auto;
+    width: max-content;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.stock__main-offer-description-period {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  color: #ffffff;
+}
+
+.stock__main-offer-description-info {
+  margin: 22px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    margin: 18px 0 32px;
+  }
+}
+
+.stock__additional-offer-wrapper {
+  padding: 7px;
+  min-height: 212px;
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%), linear-gradient(0deg, #ffffff, #ffffff);
+
+  @media (max-width: 1199px) {
+    width: 48%;
+    height: auto;
+    min-height: 211px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    min-height: max-content;
+    margin-bottom: 31px;
+  }
+}
+
+.stock__additional-offer-free,
+.stock__additional-offer-discount {
+  background-color: #ffffff;
+  padding: 21px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    padding: 30px 43px 39px 43px;
+    text-align: center;
+  }
+}
+
+.stock__additional-offer {
+  display: flex;
+  flex-direction: column;
+  width: 48.3%;
+  justify-content: space-between;
+
+  @media (max-width: 1199px) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  & h3 {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #1c3374;
+    margin-bottom: 5px;
+  }
+
+  & p {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1c3374;
+
+    @media (max-width: 767px) {
+      margin-bottom: 27px;
+    }
+  }
+
+  & a {
+    width: max-content;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: auto;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1c3374;
+    margin-bottom: 8px;
+
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.stock__main-offer-image {
+  width: 280px;
+  height: 462px;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 1199px) {
+    width: 59%;
+    max-width: 410px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 325px) {
+    width: 100%;
+    height: 299px;
+  }
+}
