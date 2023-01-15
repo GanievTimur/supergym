@@ -1930,10 +1930,8 @@ button,
   position: relative;
   background-color: #ffffff;
   padding: 0 0 119px;
-}
-
-.reviews .container {
-  width: 41%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -1994,10 +1992,10 @@ button,
   width: 50px;
   height: 50px;
   top: 52%;
-  left: 26%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: -12px;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
   z-index: 1;
   cursor: pointer;
 }
@@ -2007,10 +2005,10 @@ button,
   width: 50px;
   height: 50px;
   top: 52%;
-  right: 22.2%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 0;
+  -webkit-transform: translate(25%, -50%);
+  -ms-transform: translate(25%, -50%);
+  transform: translate(25%, -50%);
   z-index: 1;
   cursor: pointer;
 }
@@ -2037,6 +2035,8 @@ button,
 
 .reviews-swiper {
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 560px;
 }
 
 /* @mixin hover-focus {
@@ -2485,10 +2485,7 @@ button,
 
   .reviews {
     padding: 0 0 102px;
-  }
-
-  .reviews .container {
-    width: 74%;
+    width: 80%;
   }
 
   .reviews__title {
@@ -2504,13 +2501,17 @@ button,
   }
 
   .reviews__button-prev {
-    left: 7%;
+    left: -49px;
     top: 49%;
   }
 
   .reviews__button-next {
-    right: 0;
+    right: -6%;
     top: 49%;
+  }
+
+  .reviews-swiper {
+    max-width: 567px;
   }
 }
 
@@ -2966,10 +2967,6 @@ button,
     padding: 0 0 70px;
   }
 
-  .reviews .container {
-    width: 70%;
-  }
-
   .reviews__title {
     margin: 0 0 42px -4px;
   }
@@ -3002,11 +2999,12 @@ button,
   }
 
   .reviews__button-prev {
+    left: -37px;
     top: 51%;
   }
 
   .reviews__button-next {
-    right: 0;
+    right: -25px;
     top: 51%;
   }
 
@@ -3019,18 +3017,15 @@ button,
     width: 10px;
     height: 19px;
   }
+
+  .reviews-swiper {
+    max-width: 226px;
+  }
 }
 
 @media (max-width: 767px) and (max-width: 767px) {
   .gym__video img {
     max-width: 320px;
-  }
-}
-
-@media (max-width: 330px) {
-  .reviews__button-next {
-    right: -9%;
-    top: 51%;
   }
 }
 
