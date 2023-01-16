@@ -1084,6 +1084,7 @@ button,
   background: #f8f9fc;
   padding: 119px 0;
   z-index: 3;
+  overflow: hidden;
 }
 
 .tabs__background-image {
@@ -2039,6 +2040,189 @@ button,
   max-width: 560px;
 }
 
+.feedback-free-lesson {
+  background-color: #102654;
+  padding: 56px 164px 70px 103px;
+}
+
+.feedback-free-lesson fieldset {
+  border: none;
+  padding: 0;
+}
+
+.feedback-free-lesson fieldset:first-child {
+  margin-right: 20px;
+}
+
+.feedback-free-lesson input {
+  border: none;
+  color: #ffffff;
+  background-color: #102654;
+  border-bottom: 1px solid #ffffff;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.feedback-free-lesson button {
+  background-color: inherit;
+  border: 3px solid #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 99%;
+  padding: 17px 0;
+}
+
+.feedback-free-lesson__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 27px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input::-moz-placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.feedback-free-lesson__title {
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #74819c;
+}
+
+.feedback-contacts {
+  background-color: #ffffff;
+  padding: 58px 160px 44px 120px;
+}
+
+.feedback-contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.feedback-contacts__title {
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.feedback-contacts__info {
+  margin-bottom: 20px;
+}
+
+.feedback-contacts__info h3 {
+  margin: 0 0 5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 106%;
+  color: #102654;
+}
+
+.feedback-contacts__info p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+}
+
+.feedback-contacts__info p:not(:last-of-type) {
+  margin-bottom: 23px;
+}
+
+.feedback-contacts__info a {
+  display: block;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+}
+
+.feedback-contacts__info a:not(:last-of-type) {
+  margin-bottom: 23px;
+}
+
+.feedback-contacts__info:first-child {
+  padding-right: 61px;
+  border-right: 1px solid #74819c;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2484,7 +2668,7 @@ button,
   }
 
   .reviews {
-    padding: 0 0 102px;
+    padding: 0 0 100px;
     width: 80%;
   }
 
@@ -2512,6 +2696,65 @@ button,
 
   .reviews-swiper {
     max-width: 567px;
+  }
+
+  .feedback-free-lesson {
+    padding: 62px 160px 69px 131px;
+  }
+
+  .feedback-free-lesson fieldset:first-child {
+    margin-right: 0;
+  }
+
+  .feedback-free-lesson input {
+    min-width: 206px;
+  }
+
+  .feedback-free-lesson button {
+    width: 100%;
+  }
+
+  .feedback-free-lesson__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 34px;
+  }
+
+  .feedback {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-contacts {
+    padding: 61px 180px 44px 133px;
+  }
+
+  .feedback-contacts__wrapper {
+    margin-left: 0;
+  }
+
+  .feedback-contacts__title {
+    margin-bottom: 39px;
+  }
+
+  .feedback-contacts__info h3 {
+    font-size: 20px;
+    margin: 0 0 9px;
+  }
+
+  .feedback-contacts__info p {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .feedback-contacts__info a {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .feedback-contacts__info:first-child {
+    padding-right: 49px;
   }
 }
 
@@ -3020,6 +3263,49 @@ button,
 
   .reviews-swiper {
     max-width: 226px;
+  }
+
+  .feedback-free-lesson {
+    padding: 63px 15px 68px;
+  }
+
+  .feedback-free-lesson fieldset:first-child {
+    margin-bottom: 36px;
+  }
+
+  .feedback-free-lesson input {
+    width: 100%;
+  }
+
+  .feedback-free-lesson__form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 37px;
+  }
+
+  .feedback-free-lesson__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .feedback {
+    border: none;
+  }
+
+  .feedback-contacts {
+    padding: 65px 15px 36px;
+  }
+
+  .feedback-contacts__info {
+    margin-bottom: 26px;
+  }
+
+  .feedback-contacts__info:first-child {
+    padding-right: 0;
+    border: none;
   }
 }
 

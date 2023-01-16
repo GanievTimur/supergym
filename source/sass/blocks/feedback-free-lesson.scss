@@ -1,0 +1,110 @@
+.feedback-free-lesson {
+  background-color: #102654;
+  padding: 56px 164px 70px 103px;
+
+  @media (max-width: 1199px) {
+    padding: 62px 160px 69px 131px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 63px 15px 68px;
+  }
+
+  & fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  & fieldset:first-child {
+    margin-right: 20px;
+
+    @media (max-width: 1199px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  & input {
+    border: none;
+    color: #ffffff;
+    background-color: #102654;
+    border-bottom: 1px solid #ffffff;
+    padding: 0;
+    padding-bottom: 5px;
+
+    @media (max-width: 1199px) {
+      min-width: 206px;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  & button {
+    background-color: inherit;
+    border: 3px solid #ffffff;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 99%;
+    padding: 17px 0;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+  }
+}
+
+.feedback-free-lesson__form-wrapper {
+  display: flex;
+  margin-bottom: 27px;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 37px;
+  }
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.feedback-free-lesson__title {
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  @media (max-width: 1199px) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: 767px) {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

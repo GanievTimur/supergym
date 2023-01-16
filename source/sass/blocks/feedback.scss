@@ -1,0 +1,13 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #74819c;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 767px) {
+    border: none;
+  }
+}
