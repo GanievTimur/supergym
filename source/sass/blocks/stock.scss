@@ -25,26 +25,28 @@
 }
 
 .stock__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
 
   @media (max-width: 1199px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .stock__main-offer {
-  display: flex;
-  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: 1199px) {
     margin-right: 0;
     margin-bottom: 30px;
-    justify-content: space-between;
+    grid-template-columns: 41% 59%;
   }
 
   @media (max-width: 767px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 }
 
@@ -55,11 +57,11 @@
   background-color: #ed0233;
 
   @media (max-width: 1199px) {
-    width: 41.2%;
-    padding: 35px 45px 45px 44px;
+    padding: 35px 35px 45px 44px;
   }
 
   @media (max-width: 767px) {
+    padding: 35px 45px 45px 44px;
     width: 100%;
     text-align: center;
   }
@@ -86,6 +88,11 @@
     text-transform: uppercase;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
+
+    &:hover {
+      text-shadow: 1px 1px 2px #c78291, 0 0 1em #ffffff, 0 0 0.2em #ffffff;
+      transition: 0.3s;
+    }
 
     @media (max-width: 767px) {
       margin: 0 auto;
@@ -135,6 +142,18 @@
   }
 }
 
+.stock__additional-offer-wrapper:not(:last-child) {
+  margin-bottom: 40px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
 .stock__additional-offer-free,
 .stock__additional-offer-discount {
   background-color: #ffffff;
@@ -152,7 +171,6 @@
 .stock__additional-offer {
   display: flex;
   flex-direction: column;
-  width: 48.3%;
   justify-content: space-between;
 
   @media (max-width: 1199px) {
@@ -162,6 +180,7 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
+    margin-top: -9px;
   }
 
   & h3 {
@@ -202,6 +221,11 @@
     border-bottom: 1px solid #1c3374;
     margin-bottom: 8px;
 
+    &:hover {
+      text-shadow: 1px 1px 2px #7381aa, 0 0 1em #1c3374;
+      transition: 0.3s;
+    }
+
     @media (max-width: 767px) {
       margin: 0 auto;
     }
@@ -209,28 +233,19 @@
 }
 
 .stock__main-offer-image {
-  width: 280px;
-  height: 462px;
-
   & img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-  }
 
-  @media (max-width: 1199px) {
-    width: 59%;
-    max-width: 410px;
+    @media (max-width: 767px) {
+      object-fit: fill;
+    }
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    height: 100%;
+    height: 89%;
     max-width: 100%;
-  }
-
-  @media (max-width: 325px) {
-    width: 100%;
-    height: 299px;
   }
 }

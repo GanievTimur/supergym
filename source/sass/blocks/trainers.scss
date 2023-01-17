@@ -193,9 +193,16 @@
   }
 }
 
-.trainers__button-next,
-.trainers__button-prev {
+.trainers__button-next:hover,
+.trainers__button-prev:hover {
   cursor: pointer;
+
+  & svg {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    stroke: #5c5c5c;
+  }
 }
 
 .trainers__button-prev svg {

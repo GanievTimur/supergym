@@ -127,6 +127,16 @@
   }
 }
 
+.reviews__button-prev:hover,
+.reviews__button-next:hover {
+  & svg {
+    width: 55px;
+    height: 55px;
+    transition: 0.3s;
+    stroke: #5c5c5c;
+  }
+}
+
 .reviews__button-next {
   position: absolute;
   width: 50px;

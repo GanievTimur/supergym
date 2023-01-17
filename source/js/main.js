@@ -45,46 +45,46 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
-///Video popup
+// Video popup
 
 const videoInit = (selector) => {
-  const videos = document.querySelectorAll(selector)
+  const videos = document.querySelectorAll(selector);
 
-  if(videos.length > 0) {
-    videos.forEach(video => {
-      videoGenerate(video)
-    })
+  if (videos.length > 0) {
+    videos.forEach(function (video) {
+      videoGenerate(video);
+    });
   }
-}
+};
 
 const videoGenerate = (video) => {
-  const btn = video.querySelector('.gym__video-button')
-  const videoID = btn.dataset.videoId
-  const container = video.querySelector('.gym__video-wrapper')
+  const btn = video.querySelector('.gym__video-button');
+  const videoID = btn.dataset.videoId;
+  const container = video.querySelector('.gym__video-wrapper');
 
   btn.addEventListener('click', () => {
-    const iframe = iframeGenerate(videoID)
+    const iframe = iframeGenerate(videoID);
     container.innerHTML = '';
-    container.appendChild(iframe)
-  })
-}
+    container.appendChild(iframe);
+  });
+};
 
 const iframeGenerate = (videoID) => {
-  const iframe = document.createElement('iframe')
-  const src =`https://www.youtube.com/embed/${videoID}?rel=0&showinfo=0&autoplay=1&mute=0`
+  const iframe = document.createElement('iframe');
+  const src = `https://www.youtube.com/embed/${videoID}?rel=0&showinfo=0&autoplay=1&mute=0`;
 
-  iframe.setAttribute('src', src)
-  iframe.setAttribute('frameborder', '0')
-  iframe.setAttribute('allow', 'autoplay')
-  iframe.setAttribute('allowfullscreen', '')
-  iframe.classList.add('gym__video-content')
+  iframe.setAttribute('src', src);
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.classList.add('gym__video-content');
 
-  return iframe
-}
+  return iframe;
+};
 
-videoInit('.gym__video')
+videoInit('.gym__video');
 
-///Tabs
+// Tabs
 
 let tabs = document.querySelector('.tabs');
 let tabsHeader = tabs.querySelector('.tabs__button-list');
@@ -101,9 +101,7 @@ for (let i = 0; i < tabsHeaderNodes.length; i++) {
   });
 }
 
-
-
-///Slider-trainers
+// Slider-trainers
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -116,18 +114,18 @@ const swiper = new Swiper('.swiper', {
 
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
 
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40
-    }
+      spaceBetween: 40,
+    },
   },
 
   // Navigation arrows
@@ -137,11 +135,9 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// Slider-reviews
 
-///Slider-reviews
-
-let swiperReviews = new Swiper ('.reviews-swiper', {
-
+let swiperReviews = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
@@ -152,4 +148,3 @@ let swiperReviews = new Swiper ('.reviews-swiper', {
     prevEl: '.reviews__button-prev',
   },
 });
-

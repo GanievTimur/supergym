@@ -80,6 +80,11 @@
 }
 
 .footer__nav-item {
+  &:hover a {
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+
   @media (max-width: 767px) {
     margin-bottom: 18px;
   }
@@ -111,4 +116,9 @@
 
 .footer__social-list svg {
   fill: #ffffff;
+
+  &:hover {
+    fill: #6e7ea3;
+    transition: 0.3s;
+  }
 }
