@@ -661,10 +661,6 @@ button,
   color: #102654;
 }
 
-.page-body {
-  position: relative;
-}
-
 .page-main {
   overflow: hidden;
 }
@@ -675,6 +671,71 @@ button,
 
 .reviews-swiper {
   max-width: 595px;
+}
+
+.area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area;
+  padding-left: 21px;
+}
+
+.parking {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: parking;
+}
+
+.comfort {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: сomfort;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-left: 21px;
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.comfort .advantage__item-number-wrapper {
+  margin-bottom: -5px;
+}
+
+.comfort .advantage__item-wrapper {
+  margin-bottom: -5px;
+}
+
+.practice {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: practice;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.practice .advantage__item-number-wrapper {
+  margin-bottom: -5px;
+}
+
+.practice .advantage__item-wrapper {
+  margin-bottom: -5px;
+}
+
+.simulators {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  background-color: #1c3374;
+  grid-area: simulators;
+  display: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 35px 35px 41px 35px;
 }
 
 .container {
@@ -1127,6 +1188,12 @@ button,
 
 .tabs__button-item {
   padding-bottom: 11px;
+}
+
+.tabs__button-item button {
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  background-color: inherit;
   cursor: pointer;
 }
 
@@ -1134,7 +1201,7 @@ button,
   margin-right: 46px;
 }
 
-.tabs__button-active {
+.tabs__button-active button {
   color: #102654;
   position: relative;
   -webkit-transition: 0.5s;
@@ -1142,10 +1209,10 @@ button,
   transition: 0.5s;
 }
 
-.tabs__button-active::after {
+.tabs__button-active button::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -15px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -1573,6 +1640,12 @@ button,
   top: 47%;
 }
 
+.trainers__button-next,
+.trainers__button-prev {
+  border: none;
+  background-color: inherit;
+}
+
 .trainers__button-next:hover,
 .trainers__button-prev:hover {
   cursor: pointer;
@@ -1690,71 +1763,6 @@ button,
   font-size: 16px;
   line-height: 140%;
   color: #102654;
-}
-
-.area {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: area;
-  padding-left: 21px;
-}
-
-.parking {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: parking;
-}
-
-.comfort {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: сomfort;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  padding-left: 21px;
-  border-top: 2px solid rgba(209, 10, 66, 0.2);
-}
-
-.comfort .advantage__item-number-wrapper {
-  margin-bottom: -5px;
-}
-
-.comfort .advantage__item-wrapper {
-  margin-bottom: -5px;
-}
-
-.practice {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: practice;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  border-top: 2px solid rgba(209, 10, 66, 0.2);
-}
-
-.practice .advantage__item-number-wrapper {
-  margin-bottom: -5px;
-}
-
-.practice .advantage__item-wrapper {
-  margin-bottom: -5px;
-}
-
-.simulators {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  background-color: #1c3374;
-  grid-area: simulators;
-  display: row;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 5px;
-  padding: 35px 35px 41px 35px;
 }
 
 .advantage__item-title {
@@ -1951,6 +1959,7 @@ button,
   text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   margin-bottom: 8px;
+  color: #1c3374;
 }
 
 .stock__additional-offer a:hover {
@@ -2041,6 +2050,12 @@ button,
   cursor: pointer;
 }
 
+.reviews__button-prev,
+.reviews__button-next {
+  border: none;
+  background-color: inherit;
+}
+
 .reviews__button-prev:hover svg,
 .reviews__button-next:hover svg {
   width: 55px;
@@ -2092,7 +2107,7 @@ button,
 
 .feedback-free-lesson {
   background-color: #102654;
-  padding: 56px 164px 67px 103px;
+  padding: 56px 164px 67px 30%;
 }
 
 .feedback-free-lesson fieldset {
@@ -2150,7 +2165,7 @@ button,
   justify-content: space-between;
 }
 
-input::-webkit-input-placeholder {
+.feedback-free-lesson__form-wrapper input::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2159,7 +2174,7 @@ input::-webkit-input-placeholder {
   line-height: 16px;
 }
 
-input::-moz-placeholder {
+.feedback-free-lesson__form-wrapper input::-moz-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2168,7 +2183,7 @@ input::-moz-placeholder {
   line-height: 16px;
 }
 
-input:-ms-input-placeholder {
+.feedback-free-lesson__form-wrapper input:-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2177,7 +2192,7 @@ input:-ms-input-placeholder {
   line-height: 16px;
 }
 
-input::-ms-input-placeholder {
+.feedback-free-lesson__form-wrapper input::-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2186,7 +2201,7 @@ input::-ms-input-placeholder {
   line-height: 16px;
 }
 
-input::placeholder {
+.feedback-free-lesson__form-wrapper input::placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2403,6 +2418,12 @@ input::placeholder {
   }
 */
 
+@media (max-width: 1600px) {
+  .feedback-free-lesson {
+    padding: 56px 164px 67px 103px;
+  }
+}
+
 @media (max-width: 1199px) {
   .title {
     font-size: 42px;
@@ -2411,6 +2432,24 @@ input::placeholder {
 
   .reviews-swiper {
     max-width: 580px;
+  }
+
+  .area {
+    padding-left: 0;
+  }
+
+  .comfort {
+    border: none;
+    padding-left: 0;
+  }
+
+  .practice {
+    border: none;
+  }
+
+  .simulators {
+    width: 66%;
+    margin: 0 auto;
   }
 
   .container {
@@ -2687,33 +2726,6 @@ input::placeholder {
     grid-template-areas: "area parking" "simulators simulators" "сomfort practice";
   }
 
-  .advantage__title {
-    margin: 0 0 44px -22px;
-  }
-
-  .advantage__item-number {
-    font-size: 58px;
-    margin-top: 3px;
-  }
-
-  .advantage__item-subtitle {
-    font-size: 20px;
-    margin: 1px 0 2px;
-  }
-
-  .area {
-    padding-left: 0;
-  }
-
-  .comfort {
-    border: none;
-    padding-left: 0;
-  }
-
-  .practice {
-    border: none;
-  }
-
   .area {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -2741,9 +2753,18 @@ input::placeholder {
     -ms-grid-column-span: 3;
   }
 
-  .simulators {
-    width: 66%;
-    margin: 0 auto;
+  .advantage__title {
+    margin: 0 0 44px -22px;
+  }
+
+  .advantage__item-number {
+    font-size: 58px;
+    margin-top: 3px;
+  }
+
+  .advantage__item-subtitle {
+    font-size: 20px;
+    margin: 1px 0 2px;
   }
 
   .advantage__item-title {
@@ -2930,6 +2951,58 @@ input::placeholder {
 
   .reviews-swiper {
     max-width: 390px;
+  }
+
+  .area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .parking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .comfort .advantage__item-number-info {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .comfort .advantage__item-number-wrapper {
+    margin-bottom: 6px;
+  }
+
+  .comfort {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 42px;
+  }
+
+  .practice .advantage__item-subtitle {
+    margin: 11px 0 4px;
+  }
+
+  .practice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .simulators {
+    width: 100%;
   }
 
   .container {
@@ -3139,6 +3212,10 @@ input::placeholder {
     margin-bottom: 44px;
   }
 
+  .trainers__slider-item {
+    min-height: 274px;
+  }
+
   .trainers__slider-front {
     height: auto;
   }
@@ -3168,10 +3245,6 @@ input::placeholder {
     height: 19px;
   }
 
-  .swiper-slide {
-    min-height: 274px;
-  }
-
   .advantage {
     padding: 44px 0 150px;
   }
@@ -3188,79 +3261,6 @@ input::placeholder {
     -ms-grid-rows: 20.8% 0 21.6% 0 26.5% 0 25.4% 0 19%;
     grid-template-rows: 20.8% 21.6% 26.5% 25.4% 19%;
     grid-template-areas: "area" "parking" "simulators" "сomfort" "practice";
-  }
-
-  .advantage__item-wrapper {
-    width: 78%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .advantage__item-number-wrapper {
-    margin-bottom: 5px;
-  }
-
-  .advantage__title {
-    margin: 0 0 46px -17px;
-  }
-
-  .advantage__item-number-text {
-    text-align: center;
-  }
-
-  .advantage__item-number-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .area {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .parking {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .comfort .advantage__item-number-info {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .comfort .advantage__item-number-wrapper {
-    margin-bottom: 6px;
-  }
-
-  .comfort {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 42px;
-  }
-
-  .practice .advantage__item-subtitle {
-    margin: 11px 0 4px;
-  }
-
-  .practice {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .area {
@@ -3290,8 +3290,29 @@ input::placeholder {
     -ms-grid-column-span: 1;
   }
 
-  .simulators {
-    width: 100%;
+  .advantage__item-wrapper {
+    width: 78%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .advantage__item-number-wrapper {
+    margin-bottom: 5px;
+  }
+
+  .advantage__title {
+    margin: 0 0 46px -17px;
+  }
+
+  .advantage__item-number-text {
+    text-align: center;
+  }
+
+  .advantage__item-number-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .advantage__item-title {

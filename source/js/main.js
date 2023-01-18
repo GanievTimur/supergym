@@ -92,7 +92,17 @@ let tabsBody = tabs.querySelector('.tabs__content');
 let tabsHeaderNodes = tabs.querySelectorAll('.tabs__button-list > li');
 let tabsBodyNodes = tabs.querySelectorAll('.tabs__content > ul');
 
+
+// for (let i = 0; i < tabsHeaderNodes.length; i++) {
+//   if (!tabsBodyNodes[i]) {
+//     tabsHeaderNodes[i].remove();
+//   }
+// }
+
 for (let i = 0; i < tabsHeaderNodes.length; i++) {
+  if (!tabsBodyNodes[i]) {
+    tabsHeaderNodes[i].remove();
+  }
   tabsHeaderNodes[i].addEventListener('click', () => {
     tabsHeader.querySelector('.tabs__button-active').classList.remove('tabs__button-active');
     tabsHeaderNodes[i].classList.add('tabs__button-active');

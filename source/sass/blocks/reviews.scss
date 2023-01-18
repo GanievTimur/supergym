@@ -127,6 +127,12 @@
   }
 }
 
+.reviews__button-prev,
+.reviews__button-next {
+  border: none;
+  background-color: inherit;
+}
+
 .reviews__button-prev:hover,
 .reviews__button-next:hover {
   & svg {

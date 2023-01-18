@@ -74,7 +74,13 @@
 
 .tabs__button-item {
   padding-bottom: 11px;
-  cursor: pointer;
+
+  & button {
+    color: rgba(16, 38, 84, 0.5);
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
 }
 
 .tabs__button-item:not(:last-child) {
@@ -90,7 +96,7 @@
   }
 }
 
-.tabs__button-active {
+.tabs__button-active button {
   color: #102654;
   position: relative;
   transition: 0.5s;
@@ -98,7 +104,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -15px;
     left: 0;
     width: 100%;
     height: 2px;

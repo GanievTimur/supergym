@@ -45,6 +45,10 @@
 .trainers__slider-item {
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    min-height: 274px;
+  }
 }
 
 .trainers__slider-item:hover .trainers__slider-back {
@@ -193,6 +197,12 @@
   }
 }
 
+.trainers__button-next,
+.trainers__button-prev {
+  border: none;
+  background-color: inherit;
+}
+
 .trainers__button-next:hover,
 .trainers__button-prev:hover {
   cursor: pointer;
@@ -228,11 +238,5 @@
   @media (max-width: 767px) {
     width: 10px;
     height: 19px;
-  }
-}
-
-.swiper-slide {
-  @media (max-width: 767px) {
-    min-height: 274px;
   }
 }
