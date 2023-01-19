@@ -116,3 +116,12 @@
     border: none;
   }
 }
+
+.feedback-contacts__container {
+  max-width: 650px;
+  margin-right: auto;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}

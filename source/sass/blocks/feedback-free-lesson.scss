@@ -1,10 +1,6 @@
 .feedback-free-lesson {
   background-color: #102654;
-  padding: 56px 164px 67px 30%;
-
-  @media (max-width: 1600px) {
-    padding: 56px 164px 67px 103px;
-  }
+  padding: 56px 164px 67px 103px;
 
   @media (max-width: 1199px) {
     padding: 62px 160px 69px 131px;
@@ -82,6 +78,15 @@
     @media (max-width: 1199px) {
       width: 100%;
     }
+  }
+}
+
+.feedback-free-lesson__wrapper {
+  max-width: 500px;
+  margin-left: auto;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
   }
 }
 
