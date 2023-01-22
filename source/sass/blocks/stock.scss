@@ -213,7 +213,7 @@
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
-    margin-top: auto;
+    margin-top: 10px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
@@ -249,4 +249,9 @@
     height: 89%;
     max-width: 100%;
   }
+}
+
+.stock__additional-offer-free p,
+.stock__additional-offer-discount p {
+  margin-bottom: auto;
 }

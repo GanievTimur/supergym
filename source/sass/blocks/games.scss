@@ -31,6 +31,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
+    padding: 50px 43px 51px 38px;
   }
 }
 
@@ -41,6 +42,10 @@
 
   @media (max-width: 1199px) {
     margin-bottom: 2px;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: space-between;
   }
 }
 
@@ -120,6 +125,10 @@
     border: 2px solid #ffffff;
     padding: 12px 0;
     margin-left: 5px;
+  }
+
+  @media (max-width: 767px) {
+    width: 98%;
   }
 }
 

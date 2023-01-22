@@ -144,7 +144,6 @@ const swiper = new Swiper('.swiper', {
 
 let swiperReviews = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
-  loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
 

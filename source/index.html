@@ -19,8 +19,14 @@
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <h2 class="header-top__logo">SUPERGYM</h2>
-          <a href="tel:+88005555555" class="header-top__phone">8-800-555-55-55</a>
+          <div class="header-top__logo">
+            <picture>
+              <img src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="Логотип фитнес центра" width="122" height="44">
+            </picture>
+          </div>
+          <div class="header-top__phone-wrapper">
+            <a href="tel:+88005555555" class="header-top__phone">8-800-555-55-55</a>
+          </div>
         </div>
         <div class="header-hero">
           <ul class="header-hero__categories-list">
@@ -276,7 +282,7 @@
                   <source media="(min-width: 0)" type="image/webp" srcset="./img/trainers-anna.webp 1x, ./img/trainers-anna@2x.webp 2x">
                   <img src="./img/trainers-anna.jpg" srcset="./img/trainers-anna@2x.jpg 2x" alt="Фотография тренера Анны" width="260" height="294">
                 </picture>
-                <h3 class="trainers__slider-front-title">Анна Павлова</h3>
+                <h3 class="trainers__slider-front-title" tabindex="0">Анна Павлова</h3>
               </div>
               <div class="trainers__slider-back">
                 <h3 class="trainers__slider-back-title">Анна Павлова</h3>
@@ -294,7 +300,7 @@
                   <source media="(min-width: 0)" type="image/webp" srcset="./img/trainers-aleksey.webp 1x, ./img/trainers-aleksey@2x.webp 2x">
                   <img src="./img/trainers-aleksey.jpg" srcset="./img/trainers-aleksey@2x.jpg 2x" alt="Фотография тренера Алексея" width="260" height="294">
                 </picture>
-                <h3 class="trainers__slider-front-title">Алексей Лавров</h3>
+                <h3 class="trainers__slider-front-title" tabindex="0">Алексей Лавров</h3>
               </div>
               <div class="trainers__slider-back">
                 <h3 class="trainers__slider-back-title">Алексей Лавров</h3>
@@ -312,7 +318,7 @@
                   <source media="(min-width: 0)" type="image/webp" srcset="./img/trainers-aleksandr.webp 1x, ./img/trainers-aleksandr@2x.webp 2x">
                   <img src="./img/trainers-aleksandr.jpg" srcset="./img/trainers-aleksandr@2x.jpg 2x" alt="Фотография тренера Алексея" width="260" height="294">
                 </picture>
-                <h3 class="trainers__slider-front-title">Александр Пашков</h3>
+                <h3 class="trainers__slider-front-title" tabindex="0">Александр Пашков</h3>
               </div>
               <div class="trainers__slider-back">
                 <h3 class="trainers__slider-back-title">Александр Пашков</h3>
@@ -330,7 +336,7 @@
                   <source media="(min-width: 0)" type="image/webp" srcset="./img/trainers-maria.webp 1x, ./img/trainers-maria@2x.webp 2x">
                   <img src="./img/trainers-maria.jpg" srcset="./img/trainers-maria@2x.jpg 2x" alt="Фотография тренера Алексея" width="260" height="294">
                 </picture>
-                <h3 class="trainers__slider-front-title">Мария Кетова</h3>
+                <h3 class="trainers__slider-front-title" tabindex="0">Мария Кетова</h3>
               </div>
               <div class="trainers__slider-back">
                 <h3 class="trainers__slider-back-title">Мария Кетова</h3>
@@ -462,13 +468,36 @@
                 <p class="reviews__description-info">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__user-image">
+                <picture>
+                  <img src="./img/reviews-user.png" srcset="./img/reviews-user@2x.png 2x" alt="Фотография клиента" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__description">
+                <h3 class="reviews__description-subtitle">Виктория Иванова</h3>
+                <p class="reviews__description-info">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__user-image">
+                <picture>
+                  <img src="./img/reviews-user.png" srcset="./img/reviews-user@2x.png 2x" alt="Фотография клиента" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__description">
+                <h3 class="reviews__description-subtitle">Людмила Сереевна</h3>
+                <p class="reviews__description-info">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </li>
           </ul>
-          <button class="reviews__button-next">
+          <button class="reviews__button-prev">
             <svg width="16" height="32">
               <use href="./img/sprite/sprite.svg#slider-arrow"></use>
             </svg>
           </button>
-          <button class="reviews__button-prev">
+
+          <button class="reviews__button-next">
             <svg width="16" height="32">
               <use href="./img/sprite/sprite.svg#slider-arrow"></use>
             </svg>
@@ -523,7 +552,11 @@
 
     <footer class="footer">
       <div class="container">
-        <h2 class="footer__logo">SUPERGYM</h2>
+        <div class="footer__logo">
+          <picture>
+            <img src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="Логотип фитнес центра" width="122" height="44">
+          </picture>
+        </div>
         <ul class="footer__nav-list">
           <li class="footer__nav-item"><a href="#" class="footer__nav-link">Услуги</a></li>
           <li class="footer__nav-item"><a href="#" class="footer__nav-link">Абонементы</a></li>

@@ -1773,26 +1773,26 @@ button,
   z-index: 2;
 }
 
-.header-top__logo {
-  margin: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
+.header-top__phone-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.header-top__phone-wrapper a {
+  margin-bottom: 10px;
+}
+
+.header-top__logo {
+  margin: 0;
   margin-right: 20px;
 }
 
 .header-top__phone {
-  margin-top: -13px;
   margin-right: 1px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2390,6 +2390,10 @@ button,
   overflow: hidden;
 }
 
+.trainers__slider-item:hover .trainers__slider-front-title {
+  display: none;
+}
+
 .trainers__slider-item:hover .trainers__slider-back {
   top: 0%;
 }
@@ -2432,6 +2436,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: auto;
   background: rgba(16, 38, 84, 0.89);
 }
 
@@ -2482,13 +2487,14 @@ button,
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 11px;
   width: 6px;
   height: 6px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .trainers__button-prev {
@@ -2562,10 +2568,9 @@ button,
   display: grid;
   -ms-grid-columns: 31% 60px 22% 60px 31%;
   grid-template-columns: 31% 22% 31%;
-  -ms-grid-rows: 1fr 0 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 0 60px;
   grid-auto-flow: row;
+  -ms-grid-rows: auto 0 auto;
   grid-template-areas: "area simulators parking" "сomfort simulators practice";
 }
 
@@ -2819,7 +2824,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  margin-top: auto;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
@@ -2841,6 +2846,11 @@ button,
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.stock__additional-offer-free p,
+.stock__additional-offer-discount p {
+  margin-bottom: auto;
 }
 
 .reviews {
@@ -3150,6 +3160,9 @@ button,
 
 .feedback-contacts__info a {
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -3192,13 +3205,9 @@ button,
 
 .footer__logo {
   margin: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  margin-top: 8px;
+  width: 88px;
+  height: 32px;
 }
 
 .footer__nav-list {
@@ -3333,15 +3342,13 @@ button,
   }
 
   .header-top {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: end;
-    margin-bottom: 19px;
+    margin-bottom: 9px;
   }
 
   .header-top__logo {
-    font-size: 24px;
-    line-height: 29px;
+    margin: -7px 20px 0 -2px;
+    width: 82px;
+    height: 17px;
   }
 
   .header-top__phone {
@@ -3356,14 +3363,17 @@ button,
   }
 
   .header-hero__categories-list {
-    margin: 27px 0 0;
+    margin: 27px 0 0 0;
   }
 
   .header-hero__description {
+    width: 192px;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end;
     margin-top: 49px;
+    margin-left: 22px;
+    margin-right: auto;
   }
 
   .header-hero__description-subtitle {
@@ -3802,9 +3812,9 @@ button,
   }
 
   .footer__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    margin-top: 6px;
+    width: 82px;
+    height: 18px;
   }
 
   .footer__nav-list {
@@ -3907,8 +3917,9 @@ button,
   }
 
   .header-top__logo {
-    font-size: 20px;
-    line-height: 24px;
+    margin: 0 20px 0 0;
+    width: 69px;
+    height: 24px;
   }
 
   .header-top__phone {
@@ -3917,7 +3928,13 @@ button,
   }
 
   .header-hero__categories-list {
-    margin: 127px 0 115px;
+    margin: 127px 0 115px auto;
+  }
+
+  .header-hero__description {
+    width: 178px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header-hero__description-subtitle {
@@ -4078,6 +4095,17 @@ button,
 
   .games__description {
     width: 100%;
+    padding: 50px 43px 51px 38px;
+  }
+
+  .games__description-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .games__description-button {
+    width: 98%;
   }
 
   .games__image img {
@@ -4105,6 +4133,14 @@ button,
     min-height: 274px;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  .trainers__slider-back {
+    padding: 42px 20px 30px;
+  }
+
+  .trainers__slider-back-list {
+    margin-left: 17px;
   }
 
   .trainers__button-prev {
@@ -4277,7 +4313,7 @@ button,
   }
 
   .reviews {
-    padding: 0 0 70px;
+    padding: 0 14px 70px;
   }
 
   .reviews__title {
@@ -4288,14 +4324,15 @@ button,
     padding: 40px 27px 33px;
   }
 
+  .reviews__description {
+    width: 100%;
+  }
+
   .reviews__description-subtitle {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    margin-left: auto;
-    margin-top: 12px;
-    margin-right: 12px;
-    margin-bottom: 23px;
+    margin: 12px auto 23px 99px;
     line-height: 119%;
   }
 
@@ -4332,7 +4369,7 @@ button,
   }
 
   .reviews-swiper {
-    max-width: 226px;
+    max-width: inherit;
   }
 
   .feedback-free-lesson {
@@ -4404,9 +4441,8 @@ button,
   }
 
   .footer__logo {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    width: 68px;
+    height: 15px;
   }
 
   .footer__nav-list {

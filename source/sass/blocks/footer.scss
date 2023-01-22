@@ -22,24 +22,19 @@
 
 .footer__logo {
   margin: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  margin-top: 8px;
+  width: 88px;
+  height: 32px;
 
   @media (max-width: 1199px) {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    margin-top: 6px;
+    width: 82px;
+    height: 18px;
   }
 
   @media (max-width: 767px) {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    width: 68px;
+    height: 15px;
   }
 }
 
