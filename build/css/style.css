@@ -1605,6 +1605,16 @@ button,
   padding: 35px 35px 41px 35px;
 }
 
+.area,
+.parking {
+  padding-bottom: 20px;
+}
+
+.comfort,
+.practice {
+  padding-top: 20px;
+}
+
 .container {
   width: 85%;
   max-width: 1366px;
@@ -2390,11 +2400,13 @@ button,
   overflow: hidden;
 }
 
-.trainers__slider-item:hover .trainers__slider-front-title {
+.trainers__slider-item:hover .trainers__slider-front-title,
+.trainers__slider-item:focus .trainers__slider-front-title {
   display: none;
 }
 
-.trainers__slider-item:hover .trainers__slider-back {
+.trainers__slider-item:hover .trainers__slider-back,
+.trainers__slider-item:focus .trainers__slider-back {
   top: 0%;
 }
 
@@ -2857,7 +2869,7 @@ button,
   position: relative;
   background-color: #ffffff;
   padding: 0 0 119px;
-  width: 50%;
+  width: 683px;
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -3603,8 +3615,8 @@ button,
     gap: 0 31px;
     -ms-grid-columns: 1fr 31px 1fr;
     grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 28.5% 0 59.6% 0 27.8%;
-    grid-template-rows: 28.5% 59.6% 27.8%;
+    -ms-grid-rows: 26.5% 0 53.6% 0 24.8%;
+    grid-template-rows: 26.5% 53.6% 24.8%;
     grid-template-areas: "area parking" "simulators simulators" "сomfort practice";
   }
 
@@ -3893,6 +3905,16 @@ button,
 
   .simulators {
     width: 100%;
+  }
+
+  .area,
+  .parking {
+    padding-bottom: 0;
+  }
+
+  .comfort,
+  .practice {
+    padding-top: 0;
   }
 
   .container {

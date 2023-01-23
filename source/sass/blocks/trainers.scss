@@ -51,11 +51,13 @@
   }
 }
 
-.trainers__slider-item:hover .trainers__slider-front-title {
+.trainers__slider-item:hover .trainers__slider-front-title,
+.trainers__slider-item:focus .trainers__slider-front-title {
   display: none;
 }
 
-.trainers__slider-item:hover .trainers__slider-back {
+.trainers__slider-item:hover .trainers__slider-back,
+.trainers__slider-item:focus .trainers__slider-back {
   top: 0%;
 }
 

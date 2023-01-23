@@ -210,3 +210,21 @@
     width: 100%;
   }
 }
+
+.area,
+.parking {
+  padding-bottom: 20px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
+}
+
+.comfort,
+.practice {
+  padding-top: 20px;
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+}
